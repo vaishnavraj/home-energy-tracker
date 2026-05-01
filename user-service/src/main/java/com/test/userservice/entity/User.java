@@ -24,5 +24,4 @@ public class User {
     private String address;
     private boolean alerting;
     private double energyAlertingThreshold;
-
 }
