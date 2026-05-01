@@ -48,7 +48,7 @@ public class ParallelDataSimulator implements CommandLineRunner {
         ((ThreadPoolExecutor)executorService).setCorePoolSize(parallelThreads);
     }
 
-    //@Scheduled(fixedRateString = "${simulation.interval-ms}")
+    @Scheduled(fixedRateString = "${simulation.interval-ms}")
     public void sendMockData(){
         int batchSize = requestPerInternal / parallelThreads;
         int remainder = requestPerInternal % parallelThreads;
@@ -59,7 +59,7 @@ public class ParallelDataSimulator implements CommandLineRunner {
                 for (int j = 0; j < requestsForThread; j++) {
                     EnergyUsageDto dto = EnergyUsageDto.builder()
                             .deviceId(random.nextLong(1, 200))
-                            .energyConsumed(Math.round(random.nextDouble(0.0, 2.0) * 100.0) / 100.0)
+                            .energyConsumed(Math.round(random.nextDouble(0.0, 30) * 100.0) / 100.0)
                             .timestamp(LocalDateTime.now()
                                     .atZone(ZoneId.systemDefault()).toInstant())
                             .build();

@@ -12,7 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class UserServiceApplicationTests {
 
-    public static final int NUMBER_OD_USERS = 10;
+    public static final int NUMBER_OD_USERS = 250;
     @Autowired
     private UserRepository userRepository;
 
