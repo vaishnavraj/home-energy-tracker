@@ -79,22 +79,25 @@
         <entry key="3">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;name&quot;: &quot;Jay&quot;,&#10;  &quot;surname&quot;: &quot;Shah&quot;,&#10;  &quot;email&quot;: &quot;jay@yopmail.com&quot;,&#10;  &quot;address&quot;: &quot;Ahmedabad&quot;,&#10;  &quot;alerting&quot;: false,&#10;  &quot;energyAlertingThreshold&quot;: 0&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8082" />
+              <option name="id" value="3" />
+              <option name="method" value="GET" />
+              <option name="params">
                 <map>
-                  <entry key="Content-Type" value="application/json" />
+                  <entry key="userId" value="1" />
                 </map>
               </option>
-              <option name="host" value="http://127.0.0.1:8080" />
-              <option name="id" value="3" />
-              <option name="method" value="POST" />
-              <option name="res" value="{&quot;id&quot;:3,&quot;name&quot;:&quot;Jay&quot;,&quot;surname&quot;:&quot;Shah&quot;,&quot;email&quot;:&quot;jay@yopmail.com&quot;,&quot;address&quot;:&quot;Ahmedabad&quot;,&quot;alerting&quot;:false,&quot;energyAlertingThreshold&quot;:0.0}" />
-              <option name="time" value="2026-04-29 20:46:57" />
-              <option name="uri" value="/api/v1/user" />
+              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Fri May 01 22:24:56 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Not Found, status=404).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
+              <option name="time" value="2026-05-01 22:24:57" />
+              <option name="uri" value="/api/v1/insight/overview/{userId}" />
             </ReqHistory>
           </value>
         </entry>
@@ -106,44 +109,45 @@
               <option name="fileNames">
                 <array />
               </option>
-              <option name="host" value="http://127.0.0.1:8080" />
+              <option name="headers">
+                <map />
+              </option>
+              <option name="host" value="http://127.0.0.1:8085/api/v1/insight/overview/{userId}" />
               <option name="id" value="4" />
               <option name="method" value="GET" />
               <option name="params">
                 <map>
-                  <entry key="id" value="1" />
+                  <entry key="userId" value="1" />
                 </map>
               </option>
-              <option name="res" value="{&quot;id&quot;:1,&quot;name&quot;:&quot;Raju&quot;,&quot;surname&quot;:&quot;Sharma&quot;,&quot;email&quot;:&quot;raju@yopmail.com&quot;,&quot;address&quot;:&quot;Jaipur&quot;,&quot;alerting&quot;:false,&quot;energyAlertingThreshold&quot;:0.0}" />
-              <option name="time" value="2026-04-29 21:02:37" />
-              <option name="uri" value="/api/v1/user/{id}" />
+              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Fri May 01 22:25:08 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
+              <option name="time" value="2026-05-01 22:25:08" />
+              <option name="uri" value="" />
             </ReqHistory>
           </value>
         </entry>
         <entry key="5">
           <value>
             <ReqHistory>
-              <option name="body" value="{&#10;  &quot;id&quot;: 1,&#10;  &quot;name&quot;: &quot;Ram&quot;,&#10;  &quot;surname&quot;: &quot;Ji&quot;,&#10;  &quot;email&quot;: &quot;ram@yopmail.com&quot;,&#10;  &quot;address&quot;: &quot;Ayodhya&quot;,&#10;  &quot;alerting&quot;: false,&#10;  &quot;energyAlertingThreshold&quot;: 0&#10;}" />
-              <option name="contentType" value="application/json" />
+              <option name="body" value="" />
+              <option name="contentType" value="application/x-www-form-urlencoded" />
               <option name="fileNames">
                 <array />
               </option>
               <option name="headers">
-                <map>
-                  <entry key="Content-Type" value="application/json" />
-                </map>
+                <map />
               </option>
-              <option name="host" value="http://127.0.0.1:8080" />
+              <option name="host" value="http://127.0.0.1:8085/api/v1/insight/overview/{userId}" />
               <option name="id" value="5" />
-              <option name="method" value="PUT" />
+              <option name="method" value="GET" />
               <option name="params">
                 <map>
-                  <entry key="id" value="0" />
+                  <entry key="userId" value="15" />
                 </map>
               </option>
-              <option name="res" value="User not found" />
-              <option name="time" value="2026-04-29 21:03:37" />
-              <option name="uri" value="/api/v1/user/{id}" />
+              <option name="res" value="&lt;html&gt;&lt;body&gt;&lt;h1&gt;Whitelabel Error Page&lt;/h1&gt;&lt;p&gt;This application has no explicit mapping for /error, so you are seeing this as a fallback.&lt;/p&gt;&lt;div id='created'&gt;Fri May 01 22:26:07 IST 2026&lt;/div&gt;&lt;div&gt;There was an unexpected error (type=Internal Server Error, status=500).&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;" />
+              <option name="time" value="2026-05-01 22:26:07" />
+              <option name="uri" value="" />
             </ReqHistory>
           </value>
         </entry>
@@ -1144,8 +1148,8 @@
     </option>
     <option name="point">
       <AtomicInteger>
-        <option name="opaque" value="3" />
-        <option name="plain" value="3" />
+        <option name="opaque" value="6" />
+        <option name="plain" value="6" />
       </AtomicInteger>
     </option>
   </component>

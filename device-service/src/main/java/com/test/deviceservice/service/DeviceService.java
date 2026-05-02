@@ -6,6 +6,8 @@ import com.test.deviceservice.exception.DeviceNotFoundException;
 import com.test.deviceservice.repository.DeviceRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class DeviceService {
 
@@ -21,15 +23,7 @@ public class DeviceService {
         return mapToDto(device);
     }
 
-    private DeviceDto mapToDto(Device device) {
-        return DeviceDto.builder()
-                .id(device.getId())
-                .name(device.getName())
-                .type(device.getType())
-                .location(device.getLocation())
-                .userId(device.getUserId())
-                .build();
-    }
+
 
     public DeviceDto createDevice(DeviceDto input) {
         Device device = Device.builder()
@@ -58,5 +52,22 @@ public class DeviceService {
            throw new DeviceNotFoundException("Device not found with id "+id);
         }
         deviceRepository.deleteById(id);
+    }
+
+    public List<DeviceDto> getAllDevicesByUserId(Long userId) {
+        List<Device> devices = deviceRepository.findAllByUserId(userId);
+        return devices.stream()
+                .map(this::mapToDto)
+                .toList();
+    }
+
+    private DeviceDto mapToDto(Device device) {
+        return DeviceDto.builder()
+                .id(device.getId())
+                .name(device.getName())
+                .type(device.getType())
+                .location(device.getLocation())
+                .userId(device.getUserId())
+                .build();
     }
 }
